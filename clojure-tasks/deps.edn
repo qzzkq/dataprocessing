@@ -1,0 +1,6 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.12.0"}}
+ :aliases {:test {:extra-paths ["test"]
+                  :main-opts ["-m" "clojure-tasks.test-runner"]}
+           :bench {:extra-paths ["bench"]
+                   :main-opts ["-m" "clojure-tasks.task-c3-bench"]}}}
